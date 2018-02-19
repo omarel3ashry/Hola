@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Hola</string>
+    <string name="about">Hola is the fun, friendly spot for style and decor that’s as expressive and unique
+        as you are! Inspired by feedback from our dedicated community, our exclusive line of apparel is
+        available in a full range of sizes ― because we believe fashion is for every body. We also carry a
+        curated selection of styles from hundreds of independent designers.</string>
+    <string name="store_logo">Store Logo</string>
+    <string name="way_to_contact">way to contact</string>
+    <string name="goods">goods</string>
+</resources>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light"
+    tools:context="com.example.android.hola.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_s"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginBottom="@dimen/margin"
+            android:contentDescription="@string/store_logo"
+            android:src="@drawable/hola" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin"
+            android:text="@string/about"
+            android:textAlignment="center"
+            android:textColor="#4d2600" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginEnd="@dimen/margin"
+            android:layout_marginStart="@dimen/margin"
+            android:background="@color/colorPrimaryDark" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/slider"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sliderHeight"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/margin_s"
+            android:scaleType="centerInside" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginEnd="@dimen/margin"
+            android:layout_marginStart="@dimen/margin"
+            android:background="@color/colorPrimaryDark" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin"
+            android:layout_marginTop="@dimen/margin"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/img_height"
+                android:layout_weight="1"
+                android:background="@color/light"
+                android:contentDescription="@string/way_to_contact"
+                android:onClick="face"
+                android:scaleType="centerInside"
+                android:src="@drawable/face_hola" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/img_height"
+                android:layout_weight="1"
+                android:background="@color/light"
+                android:contentDescription="@string/way_to_contact"
+                android:onClick="whatsApp"
+                android:scaleType="centerInside"
+                android:src="@drawable/whats_hola" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/img_height"
+                android:layout_weight="1"
+                android:background="@color/light"
+                android:contentDescription="@string/way_to_contact"
+                android:onClick="call"
+                android:scaleType="centerInside"
+                android:src="@drawable/call_hola" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
