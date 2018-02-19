@@ -2,13 +2,11 @@ package com.example.android.hola;
 
 import android.content.ComponentName;
 import android.content.Intent;
-import android.content.pm.ApplicationInfo;
-import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.net.Uri;
+import android.os.Bundle;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.telephony.PhoneNumberUtils;
 import android.view.View;
 import android.widget.Toast;
@@ -22,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        slider = (ViewPager) findViewById(R.id.slider);
+        slider = findViewById(R.id.slider);
         ViewPagerAdapter viewPagerAdapter = new ViewPagerAdapter(this);
         slider.setAdapter(viewPagerAdapter);
     }
@@ -66,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
 
     private boolean whatsappInstalledOrNot(String uri) {
         PackageManager pm = getPackageManager();
-        boolean app_installed = false;
+        boolean app_installed;
         try {
             pm.getPackageInfo(uri, PackageManager.GET_ACTIVITIES);
             app_installed = true;
